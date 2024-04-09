@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114.6 108.03">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        opacity: .6;
+      }
+
+      .cls-2 {
+        font-family: Brother-1816-ExtraBold, 'Brother 1816';
+        font-size: 25.46px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <g class="cls-3">
+      <text class="cls-2" transform="translate(0 99.3)"><tspan x="0" y="0">Schindler</tspan></text>
+      <g>
+        <path class="cls-1" d="m57.28,0C36.72,0,20.05,16.67,20.05,37.23s16.67,37.23,37.23,37.23,37.23-16.67,37.23-37.23S77.84,0,57.28,0Zm0,56.95c-10.59,0-19.17-8.58-19.17-19.17s8.58-19.17,19.17-19.17,19.17,8.58,19.17,19.17-8.58,19.17-19.17,19.17Z"/>
+        <path class="cls-1" d="m35.4,67.35c6.17,4.65,14.81,7.11,21.88,7.11,7.51,0,17.97-3.54,21.88-7.11,0,0,0,0,0,0l-21.89-31.41-21.88,31.41s0,0,0,0Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

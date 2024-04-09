@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 381.92 92.49">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #bc4517;
+      }
+
+      .cls-4 {
+        font-family: Rodchenko-Regular, Rodchenko;
+        font-size: 89.28px;
+      }
+
+      .cls-5 {
+        fill: #1d70b7;
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <text class="cls-4" transform="translate(0 75.89)"><tspan class="cls-3" x="0" y="0">Па</tspan><tspan class="cls-2" x="89.45" y="0">р</tspan><tspan class="cls-1" x="130.79" y="0">т</tspan><tspan class="cls-5" x="164.71" y="0">Лидер</tspan></text>
+  </g>
+</svg>
