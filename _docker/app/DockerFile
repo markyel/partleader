@@ -1,6 +1,7 @@
 FROM php:8.3-rc-fpm
 FROM ubuntu
 #FROM node:12.18.1
+RUN rm -R /var/lib/apt/lists/
 RUN apt-get update
 RUN apt-get install -y apt-utils --fix-missin \
 #      apt-utils \
