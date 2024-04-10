@@ -1,6 +1,10 @@
-FROM php:8.3-fpm
+FROM php:8.3-rc-fpm
+#FROM ubuntu:20.04
 #FROM node:12.18.1
-RUN apt-get update && apt-get install -y \
+#RUN apt-get clean && apt-get update
+RUN apt -yqq update
+RUN apt -yqq install libxml2-dev 
+RUN apt-get update && apt-get install -y  \
       apt-utils \
       libpq-dev \
       libpng-dev \
