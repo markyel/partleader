@@ -14,7 +14,7 @@
 
     <title>Document</title>
     <!-- Scripts -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 {{--<script src="{{asset('node_modules/dropzone/dist/dropzone.js')}}"></script>--}}
 
@@ -22,6 +22,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/dropzone.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 --}}
+
+
 
 </head>
 <body class=" m-0 border-0 bd-example m-0 border-0 bd-example-cols">
@@ -44,7 +46,7 @@
     </div>
 </div>
 
-<div class="mt-1 mb-3">
+{{--<div class="mt-1 mb-3">
     <ul class="nav me-auto mb-2 mb-lg-0 justify-content-center nav-underline ">
         <!--        <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -69,7 +71,44 @@
         </li>
 
     </ul>
-</div>
+</div>--}}
+
+
+
+<nav class="navbar navbar-expand-md  sticky-top border-bottom" style="background-color: #e3f2fd;" >
+    <div class="container">
+        <a class="navbar-brand d-md-none" href="#">
+            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+                {{--<h5 class="offcanvas-title" id="offcanvasLabel">Вверх</h5>--}}
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-1 justify-content-between">
+                    <li class="nav-item"><a class="nav-link" href="#">
+                            <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('about.index')}}">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('product.index')}}">Ассортимент</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('delivery.index')}}">Оплата и доставка</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('guarantee.index')}}">Гарантия</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('docs.index')}}">Документы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('partner.index')}}">Сотрудничество</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">
+                            <svg class="bi" width="24" height="24"><use xlink:href="#cart"></use></svg>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
 
 
 <div class=" " style="background: #163649 center no-repeat ; width: 100%; height: 90px; padding-top: 10px;">
@@ -101,14 +140,11 @@
 
 
 
-
-
-
 <div class="row justify-content-md-center  m-0 p-0 w-100 bg-dark" style="background: url(/images/botbg.svg) #163649 center repeat-x ; width: 100%; height: 400px;" >
 
 
     <div class="row d-flex  justify-content-md-center m-0 p-0">
-        <div class="col col-lg  h-100 d-inline-block d-flex align-items-center ">
+        <div class="col col-lg  h-100 d-inline-block d-flex align-items-center col-xs-12 col-sm-8 col-md-8">
             <div class=" align-items-center p-5">
             <p class="text-light w-100">
             +7 (495) 222-22-22
@@ -123,7 +159,7 @@
 <!--            <img src="/images/botlogo.svg">-->
         </div>
 
-        <div class="col col-lg d-flex align-items-center p-5  " >
+        <div class="col col-lg d-flex align-items-center p-5  col-xs-12 col-sm-8 col-md-8" >
             <nav class="navbar  ms-5 border-body" data-bs-theme="navbar-light">
             <ul class="nav flex-column ms-5" >
                 <!--        <li class="nav-item">
@@ -157,7 +193,6 @@
 
 
 </div>
-
 
 
 
