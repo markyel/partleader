@@ -182,7 +182,7 @@
             <!-- Widget 1 START -->
             <div class="col-lg-3">
                 <!-- logo -->
-                <a class="me-0" href="index.html">
+                <a class="me-0" href="{{route('start.index')}}">
                     <img class="h-40px" src="images/botlogo.svg" alt="logo">
                     {{--<img class="dark-mode-item h-40px" src="images/botlogo.svg" alt="logo">--}}
                 </a>
@@ -201,15 +201,16 @@
                     <div class="col-6 col-md-4">
                         <h6 class="mb-2 mb-md-4" >Навигация</h6>
                         <ul class="nav flex-column">
-                            <li class="nav-item"><a class="nav-link-b pt-0" href="about-v1.html">О нас</a></li>
-                            <li class="nav-item"><a class="nav-link-b" href="contact-v1.html">Ассортимент и цены</a></li>
-                            <li class="nav-item"><a class="nav-link-b" href="career.html">Оплата и доставка</a></li>
-                            <li class="nav-item"><a class="nav-link-b" href="career-single.html">Гарантия</a></li>
-                            <li class="nav-item"><a class="nav-link-b" href="contact-v1.html">Документы</a></li>
-                            <li class="nav-item"><a class="nav-link-b" href="sign-in.html">Стать поставщиком</a></li>
+                            <li class="nav-item"><a class="nav-link-b pt-0" href="{{route('about.index')}}">О нас</a></li>
+                            <li class="nav-item"><a class="nav-link-b" href="{{route('product.index')}}">Ассортимент и цены</a></li>
+                            <li class="nav-item"><a class="nav-link-b" href="{{route('delivery.index')}}">Оплата и доставка</a></li>
+                            <li class="nav-item"><a class="nav-link-b" href="{{route('guarantee.index')}}">Гарантия</a></li>
+                            <li class="nav-item"><a class="nav-link-b" href="{{route('docs.index')}}">Документы</a></li>
+                            <li class="nav-item"><a class="nav-link-b" href="{{route('partner.index')}}">Стать поставщиком</a></li>
 
                         </ul>
                     </div>
+
 
                     <!-- Link block -->
                    {{-- <div class="col-6 col-md-4">
