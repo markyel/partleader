@@ -280,52 +280,10 @@
 
 
 
-<div class="row mb-3 text-start p-5" style="background: url(/images/botbg.svg) #163649 center  repeat-x ; ">
-    <div class="col-md-3" style="background: url(/images/botlogo.svg)  center no-repeat ;  "><br></div>
-
-    <div class="col-md-4 p-5">
-
-            <p class="text-light w-100">
-            +7 (495) 222-22-22
-        </p>
-
-        <p class="text-light w-100">
-            e-mail: info@partleader.ru
-        </p>
-    </div>
 
 
-    <div class="col-md-4 themed-grid-col">
-        <nav class="navbar  ms-5 border-body" data-bs-theme="navbar-light">
-            <ul class="nav flex-column ms-5" >
-                <!--        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Active</a>
-                        </li>-->
-                <li class="nav-item">
-                    <a class="nav-link text-light fs-6" href="{{route('about.index')}}">О нас</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light fs-6" href="{{route('product.index')}}">Ассортимент и цены</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light fs-6" href="{{route('delivery.index')}}">Оплата и доставка</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light fs-6" href="{{route('guarantee.index')}}">Гарантия</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light fs-6" href="{{route('docs.index')}}">Документы</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light fs-6" href="{{route('partner.index')}}">Стать поставщиком</a>
-                </li>
 
-            </ul>
-        </nav>
-    </div>
-</div>
-
-
+{{--
 
 <div class="row justify-content-md-center  m-0 p-0 w-100 " style="background: url(/images/botbg.svg) #163649 center repeat-x ; width: 100%; height: 400px;" >
 
@@ -381,6 +339,7 @@
 
 </div>
 
+--}}
 
 
 
