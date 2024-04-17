@@ -3,7 +3,7 @@ FROM php:8.3-rc-fpm
 #FROM node:12.18.1
 #RUN apt-get clean && apt-get update
 RUN apt -yqq update
-RUN apt -yqq install libxml2-dev 
+RUN apt -yqq install libxml2-dev
 RUN apt-get update && apt-get install -y  \
       apt-utils \
       libpq-dev \
@@ -17,9 +17,12 @@ RUN apt-get update && apt-get install -y  \
       docker-php-ext-install zip && \
       apt-get clean && \
       rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+# RUN apt-get update && apt-get upgrade -y && \
+ #         apt-get install -y nodejs --fix-missing
+         # npm run
 
 COPY ./_docker/app/php.ini /usr/local/etc/php/conf.d/php.ini
-
+RUN npm install
 
 #Install composer
 ENV COMPOSER_ALLOW_SUPERUSER=1
@@ -28,6 +31,8 @@ RUN curl -sS https://getcomposer.org/installer | php -- \
     --install-dir=/usr/local/bin
 
 #RUN npm install --quiet
-#CMD npm start
+
 
 WORKDIR /var/www
+
+#CMD npm start
