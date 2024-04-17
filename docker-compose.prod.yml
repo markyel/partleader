@@ -41,7 +41,7 @@ services:
         # working_dir: /var/www/partleader
         entrypoint: ["npm", "start"]
         volumes:
-            - ./:/var/www/partleader
+            - ./:/var/www
         #    - "./www/:/var/www/partleader"
         command: bash -c "npm install && npm start"
         container_name: project_npm
