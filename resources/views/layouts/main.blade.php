@@ -14,6 +14,7 @@
     <!-- Scripts -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
     {{--<script src="{{asset('node_modules/dropzone/dist/dropzone.js')}}"></script>--}}
 
     {{--
@@ -117,7 +118,7 @@
 
 
 
-
+<i class="bi bi-0-circle"></i> ффф
 
 @yield('pagecontent')
 <div class=" " style="background: #163649 center no-repeat ; width: 100%; height: 90px; padding-top: 10px;">
