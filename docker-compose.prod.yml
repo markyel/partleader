@@ -38,7 +38,7 @@ services:
 
     npm:
         image: node:latest
-        working_dir: /var/www/partleader
+        # working_dir: /var/www/partleader
         entrypoint: ["npm", "start"]
         volumes:
             - "./www/:/var/www/partleader"
