@@ -23,7 +23,7 @@ RUN apt-get update && apt-get install -y  \
          # npm run
 
 COPY ./_docker/app/php.ini /usr/local/etc/php/conf.d/php.ini
-RUN npm install -g npm
+RUN npm install
 
 #Install composer
 ENV COMPOSER_ALLOW_SUPERUSER=1
