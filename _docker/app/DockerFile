@@ -1,4 +1,4 @@
-FROM php:8.3-rc-fpm
+FROM php:8.2-fpm-bullseye
 #FROM ubuntu:20.04
 #FROM node:12.18.1
 #RUN apt-get clean && apt-get update
