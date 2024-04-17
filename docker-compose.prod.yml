@@ -39,7 +39,7 @@ services:
     npm:
         image: node:latest
         working_dir: /var/www
-        entrypoint: [ "npm" ]
+        entrypoint: ["npm", "start"]
         volumes:
             - "./www/:/var/www/partleader"
         container_name: project_npm
