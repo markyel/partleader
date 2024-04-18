@@ -7,14 +7,20 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="{{asset('resources/sass/app.scss')}}"> -->
+    {{--<!-- <link rel="stylesheet" href="{{asset('resources/sass/app.scss')}}"> -->--}}
 
 
     <title>Document</title>
     <!-- Scripts -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
+    {{--
+    <script type="module" src="http://[::]:5173/@vite/client"></script><link rel="stylesheet" href="http://[::]:5173/resources/css/app.css" />
+
+    <script type="module" src="http://[::]:5173/@vite/client"></script><script type="module" src="http://[::]:5173/resources/js/app.js"></script>
+--}}
     {{--<script src="{{asset('node_modules/dropzone/dist/dropzone.js')}}"></script>--}}
 
     {{--
@@ -118,7 +124,7 @@
 
 
 
-<i class="bi bi-0-circle"></i> ффф
+
 
 @yield('pagecontent')
 <div class=" " style="background: #163649 center no-repeat ; width: 100%; height: 90px; padding-top: 10px;">
@@ -169,7 +175,7 @@
 
 
 <footer class="bg-dark position-relative overflow-hidden pb-0 pt-6 pt-lg-8" data-bs-theme="dark"
-        style="background: url(/images/botbg.svg) #163649 center  repeat-x ; ">
+        style="background: url({{asset('/images/botbg.svg')}}) #163649 center  repeat-x ; ">
 
 
     <div class="container position-relative mt-5">
@@ -285,7 +291,7 @@
             <!-- Bottom footer -->
             <div class="d-md-flex justify-content-between align-items-center text-center text-lg-start py-4">
                 <!-- copyright text -->
-                <div class="text-body"> Все права защищены <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+                <div class="text-body"> <i class="bi bi-0-circle"></i> Все права защищены <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
                         <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512"/>
                     </svg> 2024</div>
                 <!-- copyright links-->
@@ -302,6 +308,7 @@
                 </div>--}}
             </div>
         </div>
+    </div>
 </footer>
 
 

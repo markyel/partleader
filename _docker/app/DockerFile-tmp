@@ -1,4 +1,9 @@
 FROM php:8.2-fpm-bullseye
+#FROM ubuntu:20.04
+#FROM node:12.18.1
+#RUN apt-get clean && apt-get update
+RUN apt -yqq update
+RUN apt -yqq install libxml2-dev
 RUN apt-get update && apt-get install -y  \
       apt-utils \
       libpq-dev \
@@ -12,11 +17,21 @@ RUN apt-get update && apt-get install -y  \
       docker-php-ext-install zip && \
       apt-get clean && \
       rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
+# RUN apt-get update && apt-get upgrade -y && \
+ #         apt-get install -y nodejs --fix-missing
+         # npm run
 
 COPY ./_docker/app/php.ini /usr/local/etc/php/conf.d/php.ini
 
+# Install Node
 
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y --silent \
+        nodejs
+    #&& npm i npm@latest -g
+
+
+CMD ["sh", "-c", "npm install && npm run dev -- --host"]
 
 
 
@@ -26,15 +41,10 @@ RUN curl -sS https://getcomposer.org/installer | php -- \
     --filename=composer \
     --install-dir=/usr/local/bin
 
+#RUN npm install --quiet
+
 
 WORKDIR /var/www
-
-RUN groupadd -g 1000 www && useradd -u 1000 -ms /bin/bash -g www www
-
-# Change current user to www
-USER www
-
-# Expose port 9000 and start php-fpm server
-EXPOSE 9000
-CMD ["php-fpm"]
-
+#CMD ["npm", "run"]
+#COPY package.json /var/www/
+#CMD npm start

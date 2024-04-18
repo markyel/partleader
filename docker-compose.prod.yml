@@ -1,49 +1,55 @@
 version: '3'
 
 services:
-    nginx:
-        image: nginx:latest
-        volumes:
-            - ./:/var/www
-            - ./_docker/nginx/conf.d:/etc/nginx/conf.d
-        ports:
-            - "80:80"
-        depends_on:
-            - app
-        container_name: project_nginx
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./:/var/www
+      - ./_docker/nginx/conf.d:/etc/nginx/conf.d
+    ports:
+      - "80:80"
+    depends_on:
+      - app
+    # environment:
+    #     PORT: 3000
+    container_name: project_nginx
 
-    app:
-        build:
-            context: .
-            dockerfile: _docker/app/DockerFile
-        volumes:
-            - ./:/var/www
-        depends_on:
-            - mysql
-            - npm
-        container_name: project_app
+  app:
+    build:
+      context: .
+      dockerfile: _docker/app/DockerFile
+    volumes:
+      - ./:/var/www
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - mysql
+      - npm
+    #entrypoint: ["npm", "run"]
+    #command: npm run
+    container_name: project_app
 
-    mysql:
-        image: mysql:latest
-        restart: always
-        volumes:
-            - ./tmp/db:/var/lib/mysql
-        environment:
-            MYSQL_DATABASE: partleader
-            MYSQL_ROOT_PASSWORD: root
-        ports:
-            - 8101:3306
-        command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
-        container_name: project_mysql
+  mysql:
+    image: mysql:latest
+    restart: always
+    volumes:
+      - ./tmp/db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: partleader
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 8101:3306
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
+    container_name: project_mysql
 
-    npm:
-        image: node:latest
-        # working_dir: /var/www/partleader
-        entrypoint: ["npm", "start"]
-       # volumes:
-        #    - ./:/var/www
-        #    - "./www/:/var/www/partleader"
-        command: bash -c "npm install && npm start"
-
-        container_name: project_npm
-
+  npm:
+    build:
+      context: .
+      dockerfile: ./_docker/nodejs/Dockerfile
+    tty: true
+    ports:
+      - "5173:5173"
+    working_dir: /var/www
+    volumes:
+      - .:/var/www # Монтируем локальную папку в контейнер как /var/www
+    container_name: project_npm
