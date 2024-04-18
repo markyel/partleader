@@ -49,7 +49,7 @@ services:
       dockerfile: ./_docker/nodejs/Dockerfile
     tty: true
     ports:
-      - "5174:5174"
+      - "5174:5173"
     working_dir: /var/www
     volumes:
       - .:/var/www # Монтируем локальную папку в контейнер как /var/www
