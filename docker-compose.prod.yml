@@ -8,6 +8,7 @@ services:
       - ./_docker/nginx/conf.d:/etc/nginx/conf.d
     ports:
       - "80:80"
+      - '${VITE_PORT:-5173}:${VITE_PORT:-5173}'
     depends_on:
       - app
     # environment:
