@@ -3,11 +3,14 @@ import laravel from 'laravel-vite-plugin';
 
 
 export default defineConfig({
-    server: {
+/*    server: {
         host: '0.0.0.0',
         hmr: {
             host: 'localhost'
         }
+    },*/
+    watch: {
+        usePolling: true
     },
     plugins: [
         laravel({
