@@ -13,8 +13,7 @@ export default defineConfig({
         usePolling: true
     },
     server: {
-        https: false,
-        host: true,
+        host: '0.0.0.0',
         port: 5173,
         hmr: {host: 'localhost', protocol: 'ws'},
     },
