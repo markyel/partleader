@@ -12,6 +12,12 @@ export default defineConfig({
     watch: {
         usePolling: true
     },
+    server: {
+        https: false,
+        host: true,
+        port: 5173,
+        hmr: {host: 'localhost', protocol: 'ws'},
+    },
     plugins: [
         laravel({
             input: [
