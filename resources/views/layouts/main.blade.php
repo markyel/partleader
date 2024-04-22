@@ -80,7 +80,7 @@
 </div>--}}
 
 
-<nav class="navbar navbar-expand-md  sticky-top border-bottom" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-expand-sm  sticky-top border-bottom" style="background-color: #e3f2fd;">
     <div class="container">
         <a class="navbar-brand d-md-none" href="#">
             <svg class="bi" width="24" height="24">
