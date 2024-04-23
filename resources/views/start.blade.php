@@ -222,8 +222,37 @@
     </div>--}}
 
 
- <section>
-        <div class="container">
+
+
+
+
+    <div class="" style="background-image: url(/images/bg1.png); background-color: #163649;  width: 100%;   ">
+
+
+
+
+
+
+
+        <div class="p-5 text-start ">
+            <div class="container py-5">
+
+                <h1 style="color: white;" class=" col-lg-8 mx-auto ">
+                    Широкий ассортимент запчастей</h1>
+
+                <p style="color: white;" class="col-lg-8 mx-auto lead">
+            ПартЛидер предлагает широкий ассортимент продукции для обслуживания и ремонта подъемного оборудования различных марок. ПартЛидер обеспечивает поставку оригинальныъ комплектующиъ и аналогов, подходящим для моделей от ведущих мировых производителей, таких как Otis, Kone, Mitsubishi Electric и других.
+                    Это позволяет своевременно проводить техническое обслуживание и предотвращать серьезные поломки, что способствует безопасности и долговечности оборудования.
+                    Компания ПартЛидер также предлагает услуги доставки по всей стране, что делает процесс приобретения запчастей удобным и эффективным.
+        </p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <section>
+        <div class="container mt-5">
             <!-- Title -->
             <div class="inner-container-small text-center mb-4 mb-md-6">
                 <h2>Как работает ПартЛидер </h2>
@@ -281,91 +310,7 @@
             </div>
 
         </div>
-    </section>-
-
-{{--
-
-<main class="container mt-5">
-    <div class="row mb-2">
-        <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-
-                    <h3 class="mb-0">Запчасти для лфитов и эскалаторов</h3>
-
-                    <p class="card-text mb-auto">
-                        ПартЛидер предлагает запасные части для любых лифтов и эскалаторов
-                    </p>
-                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-                        Оставить заявку
-
-                    </a>
-                </div>
-                <div class="col-auto d-none d-lg-block p-3">
-                     <img src="images/illustr001.jpg" style="max-height: 250px;"  class="object-fit-fill border rounded" alt="...">
-
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-
-                    <h3 class="mb-0">Запчасти для лфитов и эскалаторов</h3>
-
-                    <p class="card-text mb-auto">
-                        ПартЛидер предлагает запасные части для любых лифтов и эскалаторов
-                    </p>
-                    <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-                        Оставить заявку
-
-                    </a>
-                </div>
-                <div class="col-auto d-none d-lg-block p-3">
-                    <img src="images/illustr001.jpg" style="max-height: 250px;"  class="object-fit-fill border rounded" alt="...">
-
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-
---}}
-
-    <div class="" style="background-image: url(/images/bg1.png); background-color: #163649;  width: 100%;   ">
-
-
-
-
-       {{-- <div class="row g-0  position-relative bg-transparent">
-            <div class="col-md-3 mb-md-0 p-md-4 ">
-                <img src="images/illustr001.jpg"  class="object-fit-fill border rounded" alt="...">
-            </div>
-            <div class="col-md-8 p-4 ps-md-0 mx-auto">
-                <h1 style="color: white;" class=" col-lg-8 mx-auto ">Запчасти для любых лифтов и эскалаторов</h1>
-
-                <p style="color: white;" class="col-lg-8 mx-auto lead">
-                    Компания, специализирующаяся на продаже запчастей для лифтов и эскалаторов, предлагает широкий ассортимент продукции для обслуживания и ремонта подъемного оборудования различных марок. Она обеспечивает доступ к оригинальным комплектующим и заменителям, подходящим для моделей от ведущих мировых производителей, таких как Otis, Kone, Mitsubishi Electric и других. Это позволяет своевременно проводить техническое обслуживание и предотвращать серьезные поломки, что способствует безопасности и долговечности оборудования. Компания также предлагает услуги доставки по всей стране, что делает процесс приобретения запчастей удобным и эффективным.
-                </p>
-            </div>
-        </div>--}}
-
-
-        <div class="p-5 text-start ">
-            <div class="container py-5">
-
-                <h1 style="color: white;" class=" col-lg-8 mx-auto ">Запчасти для любых лифтов и эскалаторов</h1>
-
-                <p style="color: white;" class="col-lg-8 mx-auto lead">
-            Компания, специализирующаяся на продаже запчастей для лифтов и эскалаторов, предлагает широкий ассортимент продукции для обслуживания и ремонта подъемного оборудования различных марок. Она обеспечивает доступ к оригинальным комплектующим и заменителям, подходящим для моделей от ведущих мировых производителей, таких как Otis, Kone, Mitsubishi Electric и других. Это позволяет своевременно проводить техническое обслуживание и предотвращать серьезные поломки, что способствует безопасности и долговечности оборудования. Компания также предлагает услуги доставки по всей стране, что делает процесс приобретения запчастей удобным и эффективным.
-        </p>
-
-            </div>
-        </div>
-    </div>
-
-
-
+    </section>
 
 
     <div class="p-5 text-start bg-body-tertiary">

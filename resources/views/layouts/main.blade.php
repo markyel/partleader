@@ -13,7 +13,8 @@
     <title>Document</title>
     <!-- Scripts -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
     {{--
@@ -110,7 +111,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="{{route('guarantee.index')}}">Гарантия</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('docs.index')}}">Документы</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{route('partner.index')}}">Сотрудничество</a></li>
+                    {{--<li class="nav-item"><a class="nav-link" href="{{route('partner.index')}}">Сотрудничество</a></li>--}}
                     <li class="nav-item"><a class="nav-link" href="#">
                             <svg class="bi" width="24" height="24">
                                 <use xlink:href="#cart"></use>
