@@ -4,7 +4,7 @@
 
 
     <div class="px-4 text-start bg-body-tertiary">
-        <div class=" py-5">
+        <div class="container-fluid py-5">
             <h1 class="text-body-emphasis col-lg-8 mx-auto ">Гарантийные условия</h1>
             <p class="col-lg-8 mx-auto lead">
                 ООО «ПартЛидер» гарантирует отсутствие неисправностей и высокое качество

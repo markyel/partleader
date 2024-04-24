@@ -45,7 +45,7 @@
                                                              class="mx-auto "></a>
             <!--            <img src="{{asset('/images/logo3.svg')}}" width="129" height="104" class="mx-auto ">-->
         </div>
-        <div class="text-center d-flex align-items-center col  " style="width: 50%;">
+        <div class="text-center d-flex align-items-center col  d-sm-none d-md-block  d-none d-sm-block" style="width: 50%;">
             <a class="" href="{{route('start.index')}}"><img src="{{asset('/images/titletext2.svg')}}" width="100%"
                                                              class="align-middle"></a>
             <!--            <img src="{{asset('/images/titletext2.svg')}}" width="365" height="61" class="align-middle">-->
