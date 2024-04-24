@@ -84,9 +84,11 @@
 <nav class="navbar navbar-expand-sm  sticky-top border-bottom" style="background-color: #e3f2fd;">
 
     <div class="container">
-
+        <div class="d-block d-sm-none ms-5 fs-5 p-0">
+            Запчасти для лифтов и эскалаторов
+        </div>
         <a class="navbar-brand d-md-none" href="#">
-            <svg class="bi" width="24" height=124">
+            <svg class="bi" width="24" height=24">
                 <use xlink:href="#aperture"></use>
             </svg>
 
