@@ -83,8 +83,11 @@
 
 <nav class="navbar navbar-expand-sm  sticky-top border-bottom" style="background-color: #e3f2fd;">
     <div class="container">
+        <div class="d-block d-sm-none ms-5 fs-5 p-0">
+            Запчасти для лифтов и эскалаторов
+        </div>
         <a class="navbar-brand d-md-none" href="#">
-            <svg class="bi" width="24" height="24">
+            <svg class="bi" width="24" height=124">
                 <use xlink:href="#aperture"></use>
             </svg>
 
@@ -93,11 +96,13 @@
                 aria-controls="offcanvas" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
             <div class="offcanvas-header">
                 {{--<h5 class="offcanvas-title" id="offcanvasLabel">Вверх</h5>--}}
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+
             <div class="offcanvas-body">
                 <ul class="navbar-nav flex-grow-1 justify-content-between">
                     <li class="nav-item"><a class="nav-link" href="#">
