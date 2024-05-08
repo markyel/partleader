@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Auth::routes();
 Route::get('about', [AboutController::class, 'index'])->name('about.index');
 Route::get('/', [AboutController::class, 'start'])->name('start.index');
 Route::get('/product', [AboutController::class, 'product'])->name('product.index');
@@ -19,3 +20,7 @@ Route::get('/delivery', [AboutController::class, 'delivery'])->name('delivery.in
 Route::get('/guarantee', [AboutController::class, 'guarantee'])->name('guarantee.index');
 Route::get('/docs', [AboutController::class, 'docs'])->name('docs.index');
 Route::get('/partner', [AboutController::class, 'partner'])->name('partner.index');
+
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
